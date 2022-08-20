@@ -6,7 +6,7 @@ import { OutroComponent } from './outro/outro.component';
 import { PaginaComponent } from './pagina/pagina.component';
 
 const routes: Routes = [
-  { path: "vaiPagina", component: PaginaComponent },
+  { path: "pagina", component: PaginaComponent },
   { path: "", component: InicioComponent},
   { path: "outro", component: OutroComponent},
   { path: "merendar", component: MerendarComponent},
