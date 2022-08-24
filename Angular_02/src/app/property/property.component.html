@@ -1,0 +1,46 @@
+<p>property works!</p>
+<table [class]=tabela>
+    <thead>
+        <th>
+            nome
+        </th>
+        <th>
+            idade
+        </th>
+        <th>
+            cpf
+        </th>
+        <th>
+            e-mail
+        </th>
+        <th>
+            Possui carro?
+        </th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                {{ nome }}
+            </td>
+            <td>
+                {{ idade }}
+            </td>
+            <td>
+                {{ cpf }}
+            </td>
+            <td>
+                {{ email }}
+            </td>
+            <td>
+                {{ possuiCarro }}
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<img [src]="enderecoImagem" alt="" [width]="padrao">
+<img src={{enderecoImagem}} alt="" [width]="padrao">
+
+<br>
+
+<a [href]="url" [target]="alvo" class="btn btn-primary">google</a>

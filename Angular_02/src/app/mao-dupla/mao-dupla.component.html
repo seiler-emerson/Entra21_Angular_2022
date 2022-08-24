@@ -1,0 +1,16 @@
+<label for="">Curso:</label>
+<input class="form-control" type="text" [(ngModel)]="curso">
+
+<p>Gostei muito do curso de {{ curso }}</p>
+
+<br>
+
+<label for="">Numero 1:</label>
+<input class="form-control" type="number" [(ngModel)]="numero1">
+<label for="">Numero 2:</label>
+<input class="form-control" type="number" [(ngModel)]="numero2">
+<br>
+<button class="btn btn-danger" (click)="somar()">Somar</button>
+<br>
+<h3>{{numero1}} + {{numero2}} Se clicar no button = </h3>
+<h2>{{ somar() }}</h2>
