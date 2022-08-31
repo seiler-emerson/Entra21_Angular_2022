@@ -1,0 +1,25 @@
+<p *ngIf="true">Se true, está me vendo</p>
+
+<button class="btn btn-success" (click)="alternar()">Mudar</button>
+
+<div *ngIf="aparece" class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-body">card</div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<label for="idade">Digite sua idade:</label>
+<input type="number" [(ngModel)]="idade">
+
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <div *ngIf="maiorIdade()" class="card-body">MAIOR DE IDADE</div>
+      <div *ngIf="!maiorIdade()" class="card-body">É MENOR DE IDADE</div>
+    </div>
+  </div>
+</div>
