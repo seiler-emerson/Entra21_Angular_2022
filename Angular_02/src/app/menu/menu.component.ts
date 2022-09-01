@@ -8,7 +8,14 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class MenuComponent implements OnInit {
 
+  links!: Array<any>;
+
   constructor( ) {  }
 
-  ngOnInit(): void {  }
+  ngOnInit(): void {
+    this.links = new Array();
+    this.links.push({
+
+    })
+   }
 }
