@@ -3,11 +3,13 @@ import { Router } from '@angular/router';
 import { SegurancaService } from '../seguranca.service';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class LoginComponent implements OnInit {
+
+  
 
   constructor(
     private router: Router,
@@ -15,11 +17,12 @@ export class HeaderComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.seguranca.entrou = false;
   }
 
-  sair(): void {
-    this.seguranca.entrou = false;
-    this.router.navigateByUrl("")
+  entrar(): void {
+    this.seguranca.entrou = true;
+    this.router.navigateByUrl('inicio')
   }
 
 }

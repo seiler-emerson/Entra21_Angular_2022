@@ -16,60 +16,13 @@
             </p>
           </a>
           <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a routerLink="pagina" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Pagina</p>
+            <li *ngFor="let link of links" class="nav-item">
+              <a [routerLink]="link.rota" class="nav-link">
+                <i [class]="link.cor"></i>
+                <p class="text"><span [class]="link.hexa">{{link.textContent}}</span></p>
               </a>
             </li>
-            <li class="nav-item">
-              <a routerLink="outro" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Outro</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a routerLink="property" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Property</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a routerLink="event" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Event</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a routerLink="mao-dupla" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Mão-dupla</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a [routerLink]="['/receber', 'Emerson', 27, 'Navegantes']" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Receber</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a routerLink="enviar" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Enviar</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a routerLink="diretiva-if" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Diretiva if</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a routerLink="diretiva-for" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Diretiva For</p>
-              </a>
-            </li>
+
           </ul>
         </li>
       </ul>
