@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,7 @@ import { SegurancaService } from './seguranca.service';
 import { DiretivasModule } from './diretivas/diretivas.module';
 import { BindingModule } from './binding/binding.module';
 import { RotasModule } from './rotas/rotas.module';
+import { ConsumindoApiComponent } from './consumindo-api/consumindo-api.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { RotasModule } from './rotas/rotas.module';
     MerendarComponent,
     HeaderComponent,
     MenuComponent,
-    LoginComponent
+    LoginComponent,
+    ConsumindoApiComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { RotasModule } from './rotas/rotas.module';
     FormsModule,
     DiretivasModule,
     BindingModule,
-    RotasModule
+    RotasModule,
+    HttpClientModule,
   ],
   providers: [SegurancaService],
   bootstrap: [AppComponent]

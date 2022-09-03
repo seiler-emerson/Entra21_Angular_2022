@@ -15,6 +15,7 @@ import { ReceberDadosComponent } from './rotas/receber-dados/receber-dados.compo
 import { LoginComponent } from './login/login.component';
 import { SegurancaService } from './seguranca.service';
 import { DiretivaIfComponent } from './diretivas/diretiva-if/diretiva-if.component';
+import { ConsumindoApiComponent } from './consumindo-api/consumindo-api.component';
 
 const routes: Routes = [
   { path: "pagina", component: PaginaComponent, canActivate:[SegurancaService] },
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: "enviar", component: EnviarComponent, canActivate:[SegurancaService]},
   { path: "diretiva-if", component: DiretivaIfComponent, canActivate:[SegurancaService]},
   { path: "diretiva-for/:lista", component: DiretivaForComponent, canActivate:[SegurancaService] },
+  { path: "consumindo-api", component: ConsumindoApiComponent, canActivate:[SegurancaService]},
 ];
 
 @NgModule({
