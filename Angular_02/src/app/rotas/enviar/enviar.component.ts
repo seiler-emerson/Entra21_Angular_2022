@@ -12,7 +12,6 @@ export class EnviarComponent implements OnInit {
   idade!: number
   cidade!: string
 
-
   constructor(
     private router: Router
   ) { }
