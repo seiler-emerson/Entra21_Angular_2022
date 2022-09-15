@@ -85,5 +85,12 @@ export class MenuComponent implements OnInit {
         cor: 'nav-icon far fa-circle text-success'
       }
     )
+    this.links.push(
+      {
+        rota: 'consumindo-api-spring',
+        textContent: 'Api Spring',
+        cor: 'nav-icon far fa-circle text-warning'
+      }
+    )
    }
 }

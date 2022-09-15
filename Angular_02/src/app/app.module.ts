@@ -23,6 +23,7 @@ import { DiretivasModule } from './diretivas/diretivas.module';
 import { BindingModule } from './binding/binding.module';
 import { RotasModule } from './rotas/rotas.module';
 import { ConsumindoApiComponent } from './consumindo-api/consumindo-api.component';
+import { ConsumindoApiSpringComponent } from './consumindo-api-spring/consumindo-api-spring.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ConsumindoApiComponent } from './consumindo-api/consumindo-api.componen
     HeaderComponent,
     MenuComponent,
     LoginComponent,
-    ConsumindoApiComponent
+    ConsumindoApiComponent,
+    ConsumindoApiSpringComponent
   ],
   imports: [
     BrowserModule,
