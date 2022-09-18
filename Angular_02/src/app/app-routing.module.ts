@@ -17,6 +17,7 @@ import { SegurancaService } from './seguranca.service';
 import { DiretivaIfComponent } from './diretivas/diretiva-if/diretiva-if.component';
 import { ConsumindoApiComponent } from './consumindo-api/consumindo-api.component';
 import { ConsumindoApiSpringComponent } from './consumindo-api-spring/consumindo-api-spring.component';
+import { CadastroAlunoComponent } from './cadastro-aluno/cadastro-aluno.component';
 
 const routes: Routes = [
   { path: "pagina", component: PaginaComponent, canActivate:[SegurancaService] },
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: "diretiva-for/:lista", component: DiretivaForComponent, canActivate:[SegurancaService] },
   { path: "consumindo-api", component: ConsumindoApiComponent, canActivate:[SegurancaService]},
   { path: "consumindo-api-spring", component: ConsumindoApiSpringComponent},
+  { path: "cadastr-aluno", component: CadastroAlunoComponent},
 ];
 
 @NgModule({

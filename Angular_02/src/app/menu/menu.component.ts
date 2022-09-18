@@ -92,5 +92,12 @@ export class MenuComponent implements OnInit {
         cor: 'nav-icon far fa-circle text-warning'
       }
     )
+    this.links.push(
+      {
+        rota: 'cadastr-aluno',
+        textContent: 'Cadastro Aluno',
+        cor: 'nav-icon far fa-circle text-warning'
+      }
+    )
    }
 }

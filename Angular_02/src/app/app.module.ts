@@ -24,6 +24,7 @@ import { BindingModule } from './binding/binding.module';
 import { RotasModule } from './rotas/rotas.module';
 import { ConsumindoApiComponent } from './consumindo-api/consumindo-api.component';
 import { ConsumindoApiSpringComponent } from './consumindo-api-spring/consumindo-api-spring.component';
+import { CadastroAlunoComponent } from './cadastro-aluno/cadastro-aluno.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ConsumindoApiSpringComponent } from './consumindo-api-spring/consumindo
     MenuComponent,
     LoginComponent,
     ConsumindoApiComponent,
-    ConsumindoApiSpringComponent
+    ConsumindoApiSpringComponent,
+    CadastroAlunoComponent
   ],
   imports: [
     BrowserModule,
